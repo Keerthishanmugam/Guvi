@@ -7,6 +7,9 @@ public static void main(String args[])throws IOException
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	System.out.println("Enter the number of elements in the array");
 	number=Integer.parseInt(br.readLine());
+	if(number>3)
+	{
+		System.out.println("Enter the elements");
 	int[] values=new int[number];
 	for(i=0;i<number;i++)
 	{
@@ -18,5 +21,10 @@ public static void main(String args[])throws IOException
 	sum=sum+values[i-1];
 	}
 	System.out.println(sum);
+	}
+	else
+	{
+		System.out.println("Enter a number greater than 3");
+	}
 }
 }
