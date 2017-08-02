@@ -12,7 +12,7 @@ public static void main(String args[])throws IOException
 	
 	for(i=0;i<word.length();i++)
 	{
-		for(j=i+1;j<word.length()-i;j++)
+		for(j=i+1;j<word.length();j++)
 		{
 		
 		combination=word.substring(i,j+1);
